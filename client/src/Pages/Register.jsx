@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import style from "../Styles/Register.module.css";
 import { useRegister } from "../Hooks/useRegister";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
-  const navigate = useNavigate();
+
   const  {loading, register } = useRegister();
   const [inputs, setInputs] = useState({
     firstname: "",
@@ -26,6 +25,8 @@ const Register = () => {
 
   return (
     <div className={style.RegisterDiv}>
+
+               {loading && <div className={style.loading}></div>}
 
       <p className={style.heading} >Register to <span>SquadCircle</span></p>
       <form className={style.RegisterForm} onSubmit={onClickRegister}>
