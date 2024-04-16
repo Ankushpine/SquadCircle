@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import { AuthContext } from "./Context/AuthContext";
 import { SocketContext } from "./Context/SocketContext";
 import io from "socket.io-client";
+const serverUrl = import.meta.env.VITE_SERVER_PORT;
 import {
   createBrowserRouter,
   Navigate,
@@ -19,7 +20,7 @@ const App = () => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io(`http://localhost:5000`, {
+      const socket = io(`${serverUrl}`, {
         query: {
           userId: authUser.id,
         },
