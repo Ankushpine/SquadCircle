@@ -1,0 +1,23 @@
+.MainChat {
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.EmojiPickerDown {
+  position: fixed;
+  height: 450px;
+  width: 300px;
+  bottom: 10px;
+  right: -15px;
+  z-index: 30;
+}
+
+.EmojiPickerUp {
+  position: fixed;
+  height: 450px;
+  width: 300px;
+  bottom: 10px;
+  right: -15px;
+  z-index: 45;
+}

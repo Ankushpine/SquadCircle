@@ -1,0 +1,124 @@
+.Sidebar ,.SidebarMob {
+  height: 98vh;
+  width: 255px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: rgb(121, 199, 168);
+  overflow-y: scroll;
+}
+
+
+.Heading {
+  height: 40px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+  padding: 3px;
+}
+
+.BarIcon, .BarIconMob{
+  font-size: 20px;
+  margin-left: -29px;
+  display: none;
+}
+
+.UserInfo {
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px;
+}
+
+.UserImage {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+.UserImage img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.UserName {
+  font-size: 25px;
+}
+
+.UserEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.EmailIcon {
+  font-size: 24px;
+}
+
+.SquadCircleInfo {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  border: .5px solid black;
+}
+
+.LogOutButtonDiv {
+  text-align: center;
+}
+
+.LogOutButton {
+  height: 30px;
+  width: 82px;
+  cursor: pointer;
+}
+
+
+@media (max-width:756px) {
+  .Sidebar{
+    position: fixed;
+    height: 98vh;
+    width: 255px;
+    border-radius: 15px;
+    border: 2px solid black;
+    z-index: 100;
+    display: none;
+  }
+
+  .BarIcon{
+    cursor: pointer;
+    display: inline;
+  }
+
+  .SidebarMob{
+    position: fixed;
+    height: 98vh;
+    width: 255px;
+    border-radius: 15px;
+    border: 2px solid black;
+    z-index: 100;
+    background-color: rgb(121, 199, 168);
+  }
+
+  .BarIconMob{
+    cursor: pointer;
+    display: inline;
+  }
+
+  .SidebarMob::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .SidebarMob {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
+
+}

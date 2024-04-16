@@ -1,0 +1,69 @@
+
+.RegisterDiv{
+    margin: 75px auto auto auto;
+    width: 40%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.heading span{
+    color: rgb(59, 123, 128);
+}
+
+.RegisterForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(74, 138, 150);
+}
+
+.RegisterForm input{
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(42, 42, 85);
+}
+
+.submit{
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:1100px) {
+    .RegisterDiv{
+        margin: 75px auto auto auto;
+        width: 50%;
+    }
+}
+
+@media (max-width:913px) {
+    .RegisterDiv{
+        margin: 75px auto auto auto;
+        width: 500px;
+    }
+}
+
+@media (max-width:537px) {
+    .RegisterDiv{
+        margin: 75px auto auto auto;
+        width: 300px;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+}
+

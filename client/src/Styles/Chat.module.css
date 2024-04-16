@@ -1,0 +1,267 @@
+.ChatContainer {
+  flex-grow: 1;
+  border-radius: 15px;
+  border: 2px solid black;
+  height: 98vh;
+}
+
+.ChatContainerHead {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-left: 3px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: rgb(121, 199, 168);
+}
+
+.BarIcon {
+  font-size: 23px;
+  display: none;
+}
+
+/*----------Heading----------*/
+
+.Heading {
+  height: 40px;
+  /* border-bottom: 2px solid black; */
+  display: flex;
+  padding: 3px;
+  flex-direction: column;
+  align-content: center;
+  padding-left: 20px;
+}
+
+.Heading p {
+  font-weight: 600;
+}
+
+/*----------Chat Area----------*/
+
+.ChatArea {
+  height: 465px;
+  /* width: 545px; */
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+}
+
+.ChatArea::-webkit-scrollbar {
+  display: none;
+}
+
+.ChatArea {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ChatDiv {
+  width: 100%;
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.ChatInfo {
+  display: flex;
+}
+
+/* -------------------------- */
+
+.ChatImgDiv {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  border: 2px solid black;
+  bottom: 37px;
+}
+
+.ChatImg {
+  border-radius: 50%;
+  background-size: cover;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.ChatImg img {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+}
+
+.ChatName {
+  margin: 0px 8px 0px 8px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.ChatTime {
+  margin-top: 2px;
+}
+
+/* ------------------------------------------- */
+
+.ChatText {
+  position: relative;
+  width: 350px;
+  margin-left: 42px;
+  border-radius: 0px 20px 20px 20px;
+  border: 2px solid black;
+  padding: 10px;
+  z-index: 40;
+
+}
+
+.ChatLikeActive,
+.ChatLikeInActive {
+  position: absolute;
+  bottom: -12px;
+  right: 24px;
+  border: 1px solid black;
+  display: flex;
+  gap: 7px;
+  border-radius: 10px;
+  padding: 1px;
+  background-color: rgb(180, 216, 236);
+  z-index: 40;
+}
+
+.ChatLikeInActive {
+  display: none;
+}
+
+.ChatLikebtn {
+  cursor: pointer;
+}
+
+.ChatText:hover {
+  .ChatLikeActive,
+  .ChatLikeInActive {
+    position: absolute;
+    bottom: -12px;
+    right: 24px;
+    border: 1px solid black;
+    display: flex;
+    gap: 7px;
+    border-radius: 10px;
+    padding: 1px;
+    background-color: rgb(180, 216, 236);
+  }
+}
+
+/*----------Text Area----------*/
+
+.TextArea {
+  position: relative;
+  bottom: 0;
+  height: 40px;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextContent {
+
+  margin-top: 16px;
+  height: 80%;
+  width: 85%;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding-right: 7px;
+}
+
+.ImojiIcon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.TextMessage {
+  flex-grow: 1;
+  outline: none;
+  font-size: 18px;
+  border: none;
+  z-index: 50;
+  background-color: transparent;
+}
+
+.SendIconDiv {
+  margin-top: 16px;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+}
+.SendIcon {
+  font-size: 31px;
+}
+
+@media (max-width: 756px) {
+  .BarIcon {
+    font-size: 23px;
+    display: inline;
+    cursor: pointer;
+  }
+
+  .TextArea {
+    height: 55px;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .TextContent {
+    margin-top: 5px;
+    height: 60%;
+    width: 85%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding-right: 7px;
+  }
+
+  .SendIconDiv {
+    margin-top: 5px;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 487px) {
+  .ChatText {
+    position: relative;
+    width: 250px;
+    margin-left: 42px;
+    border-radius: 0px 20px 20px 20px;
+    border: 2px solid black;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 374px) {
+  .ChatText {
+    position: relative;
+    width: 200px;
+    margin-left: 42px;
+    border-radius: 0px 20px 20px 20px;
+    border: 2px solid black;
+    padding: 10px;
+  }
+}
