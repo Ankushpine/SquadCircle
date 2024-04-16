@@ -21,7 +21,7 @@ const LogIn = () => {
   return (
     <div className={style.RegisterDiv} >
           
-          <p className={style.heading} >Login to <span>SqareCircle</span></p>
+          <p className={style.heading} >Login to <span>SquadCircle</span></p>
         <form className={style.RegisterForm} onSubmit={onClickLogin} >
 
             <input 

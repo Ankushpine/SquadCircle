@@ -27,7 +27,7 @@ const Register = () => {
   return (
     <div className={style.RegisterDiv}>
 
-      <p className={style.heading} >Register to <span>SqareCircle</span></p>
+      <p className={style.heading} >Register to <span>SquadCircle</span></p>
       <form className={style.RegisterForm} onSubmit={onClickRegister}>
         <input
           type="text"
