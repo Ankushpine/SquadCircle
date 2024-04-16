@@ -27,10 +27,6 @@ const App = () => {
       });
 
       socket.on("newMessage", (newMessage) => {
-
-        
-
-
         setMessages([newMessage, ...messages]);
       });
 
@@ -39,7 +35,6 @@ const App = () => {
           if (ele._id == newMessage._id) {
             ele.likes = newMessage.likes;
           }
-
           return ele;
         });
         setMessages(updateLike);
