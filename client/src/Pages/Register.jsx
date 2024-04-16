@@ -52,14 +52,14 @@ const Register = () => {
         />
 
         <input
-          type="text"
+          type="password"
           placeholder="Enter Password"
           value={inputs.password}
           onChange={(e) => setInputs({...inputs, password: e.target.value})}
         />
 
         <input 
-        type="text" 
+        type="password" 
         placeholder="Enter Confirm Password" 
         value={inputs.cnfPassword}
         onChange={(e) => setInputs({...inputs, cnfPassword: e.target.value})}

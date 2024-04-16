@@ -31,7 +31,7 @@ const LogIn = () => {
         />
 
         <input
-          type="text"
+          type="password"
           placeholder="Enter Password"
           value={inputs.password}
           onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
